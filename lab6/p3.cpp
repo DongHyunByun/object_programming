@@ -1,0 +1,33 @@
+
+#include <iostream>
+
+using namespace std;
+
+int fibonacci(int n) {
+	if (n == 1)
+		return 0;
+	else if (n == 2)
+		return 1;
+	else
+		return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+
+	int n;
+	int *p;
+
+	cout << "n : ";
+	cin >> n;
+
+	p = new int[n];
+
+	for (int i = 0; i < n; i++) {
+		*(p + i) = fibonacci(i + 1);  //p[i]=fibonacci(i+1)
+		cout << *(p + i) << " ";
+	}
+
+	delete[] p;
+
+	return 0;
+}
