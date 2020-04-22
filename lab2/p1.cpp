@@ -19,8 +19,8 @@ double idiv(int x, int y) {
 
 int main() {
 	int x, y;
-	cout << "x ï¿½Ô·ï¿½ : "; cin >> x;
-	cout << "y ï¿½Ô·ï¿½ : "; cin >> y;
+	cout << "x ÀÔ·Â : "; cin >> x;
+	cout << "y ÀÔ·Â : "; cin >> y;
 	cout << "x + y = " << sum(x, y) << endl;
 	cout << "x - y = " << sub(x, y) << endl;
 	cout << "x * y = " << mult(x, y) << endl;
